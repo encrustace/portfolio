@@ -4,13 +4,28 @@
   --boderColor: rgba(0, 0, 0, 0.1);
   --buttonColor: transparent;
   --buttonTextColor: black;
-  --buttonHoverColor: yellowgreen;
-  --buttonSelectedColor: yellowgreen;
+  --buttonHoverColor: rebeccapurple;
+  --buttonSelectedColor: rebeccapurple;
   --boldestTextColor: white;
   --bolderTextColor: black;
   --linkColor: rgb(0, 138, 41);
   --dividerColor: rgba(0, 0, 0, 0.1);
-  --textBackground: #0265e4;
+}
+
+@media (prefers-color-scheme: dark) {
+  body {
+    --background: #1f1f1f;
+    --color: white;
+    --boderColor: rgba(255, 255, 255, 0.1);
+    --buttonColor: transparent;
+    --buttonTextColor: white;
+    --buttonHoverColor: rebeccapurple;
+    --buttonSelectedColor: rebeccapurple;
+    --boldestTextColor: rgba(255, 255, 255, 0.8);
+    --bolderTextColor: rgba(255, 255, 255, 0.5);
+    --linkColor: rgb(0, 138, 41);
+    --dividerColor: rgba(255, 255, 255, 0.1);
+  }
 }
 
 ::-webkit-scrollbar {
@@ -41,23 +56,6 @@ body {
 @keyframes moveTo {
   from {
     transform: translateX(-100%);;
-  }
-}
-
-@media (prefers-color-scheme: dark) {
-  body {
-    --background: #1f1f1f;
-    --color: white;
-    --boderColor: rgba(255, 255, 255, 0.1);
-    --buttonColor: transparent;
-    --buttonTextColor: white;
-    --buttonHoverColor: yellowgreen;
-    --buttonSelectedColor: yellowgreen;
-    --boldestTextColor: rgba(255, 255, 255, 0.8);
-    --bolderTextColor: rgba(255, 255, 255, 0.5);
-    --linkColor: rgb(0, 138, 41);
-    --dividerColor: rgba(255, 255, 255, 0.1);
-    --textBackground: #0265e4;
   }
 }
 
