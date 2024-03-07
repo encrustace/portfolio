@@ -1,0 +1,44 @@
+.main {
+  height: 100%;
+  width: 80px;
+  display: flex;
+  flex-direction: column;
+  border-right: 1px solid var(--boderColor);
+  z-index: 1;
+  background: var(--background);
+}
+
+.link {
+  height: 80px;
+  width: auto;
+  text-decoration: none;
+  display: flex;
+  align-items: flex-end;
+  justify-content: flex-start;
+  padding: 8px;
+  color: var(--buttonTextColor);
+  transform: rotate(-90deg);
+}
+
+.link:hover {
+  background: var(--buttonHoverColor);
+}
+.selected {
+  background: var(--buttonSelectedColor);
+}
+
+@media (orientation: portrait) {
+  .main {
+    height: 80px;
+    width: 100%;
+    flex-direction: row;
+    border-bottom: 1px solid var(--boderColor);
+    border-right: none;
+  }
+  .link {
+    height: auto;
+    width: 80px;
+    transform: rotate(0deg);
+    margin-right: 4px;
+  }
+}
