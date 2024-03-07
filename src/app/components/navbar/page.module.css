@@ -1,35 +1,33 @@
 .main {
   height: 100%;
-  width: 80px;
+  width: 5rem;
   display: flex;
   flex-direction: column;
   border-right: 1px solid var(--boderColor);
-  z-index: 1;
-  background: var(--background);
 }
 
 .link {
-  height: 80px;
+  height: 5rem;
   width: auto;
   text-decoration: none;
   display: flex;
   align-items: flex-end;
   justify-content: flex-start;
-  padding: 8px;
-  color: var(--buttonTextColor);
+  padding: 0.5rem;
+  color: var(--color);
   transform: rotate(-90deg);
 }
 
 .link:hover {
-  background: var(--buttonHoverColor);
+  background: var(--highlightColor);
 }
 .selected {
-  background: var(--buttonSelectedColor);
+  background: var(--highlightColor);
 }
 
 @media (orientation: portrait) {
   .main {
-    height: 80px;
+    height: 5rem;
     width: 100%;
     flex-direction: row;
     border-bottom: 1px solid var(--boderColor);
@@ -37,8 +35,8 @@
   }
   .link {
     height: auto;
-    width: 80px;
+    width: 5rem;
     transform: rotate(0deg);
-    margin-right: 4px;
+    margin-right: 0.2rem;
   }
 }

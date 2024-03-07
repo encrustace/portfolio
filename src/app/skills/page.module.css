@@ -3,7 +3,6 @@
   flex: 1;
   flex-direction: column;
   justify-content: space-between;
-  padding: 44px;
 }
 
 .stack{
@@ -11,7 +10,7 @@
   justify-content: space-between;
   align-items: center;
   background: linear-gradient(to right, rgba(255, 255, 255, 0), rgba(65, 82, 100, 0.486));
-  padding: 16px;
+  padding: 1rem;
 }
 
 .skillDiv{
@@ -24,12 +23,12 @@
 }
 
 .skill{
-  padding: 4px;
+  padding: 0.3rem;
   transition: all 1s ease;
   font-size: 1rem;
 }
 
 .skill:hover{
   position: relative;
-  font-size: 3rem;
+  font-size: 2rem;
 }

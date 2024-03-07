@@ -1,6 +1,6 @@
 .main {
   height: 100%;
-  width: 80px;
+  width: 4rem;
   display: flex;
   flex-direction: column-reverse;
   justify-content: space-between;
@@ -11,29 +11,29 @@
   flex-direction: column;
 }
 .link {
-  height: 60px;
+  height: 4rem;
   width: auto;
   display: flex;
   justify-content: flex-start;
   align-items: center;
-  padding: 8px;
+  padding: 0.5rem;
 }
 .link:hover {
-  background: var(--buttonHoverColor);
+  background: var(--highlightColor);
 }
 .image {
-  height: 28px;
-  width: 28px;
+  height: 2rem;
+  width: 2rem;
   border-radius: 50%;
 }
 .resume p {
-  margin-left: 4px;
-  margin-top: 8px;
+  margin-left: 0.2rem;
+  margin-top: 0.5rem;
   writing-mode: vertical-rl;
   text-orientation: mixed;
 }
 .resume a{
-  color: var(--linkColor);
+  color: var(--highlightColor);
 }
 
 .resumeMobile {
@@ -42,7 +42,7 @@
 
 @media (orientation: portrait) {
   .main {
-    height: 60px;
+    height: 3rem;
     width: 100%;
     flex-direction: row;
     justify-content: space-between;
@@ -54,21 +54,24 @@
   }
   .link {
     height: auto;
-    width: 60px;
+    width: 3rem;
     justify-content: center;
     align-items: flex-start;
-    margin-right: 4px;
-    background-color: var(--buttonHoverColor);
+    margin-right: 0.2rem;
+    background-color: var(--highlightColor);
   }
   .resume {
     display: none;
   }
   .resumeMobile {
-    height: 60px;
-    width: 90px;
+    height: 3rem;
+    width: 5rem;
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: var(--buttonHoverColor);
+    background-color: var(--highlightColor);
+  }
+  .resumeMobile a{
+    color: var(--color);
   }
 }
