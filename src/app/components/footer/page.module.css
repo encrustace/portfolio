@@ -1,6 +1,6 @@
 .main {
   height: 100%;
-  width: 4rem;
+  width: 60px;
   display: flex;
   flex-direction: column-reverse;
   justify-content: space-between;
@@ -9,22 +9,20 @@
 .social {
   display: flex;
   flex-direction: column;
+  gap: 8px;
 }
 .link {
-  height: 4rem;
-  width: auto;
+  height: 60px;
+  width: 60px;
   display: flex;
   justify-content: flex-start;
   align-items: center;
   padding: 0.5rem;
+  position: relative;
+  border-radius: 50%;
 }
 .link:hover {
   background: var(--highlightColor);
-}
-.image {
-  height: 2rem;
-  width: 2rem;
-  border-radius: 50%;
 }
 .resume p {
   margin-left: 0.2rem;
@@ -42,7 +40,7 @@
 
 @media (orientation: portrait) {
   .main {
-    height: 3rem;
+    height: 60px;
     width: 100%;
     flex-direction: row;
     justify-content: space-between;
@@ -53,8 +51,8 @@
     flex-direction: row;
   }
   .link {
-    height: auto;
-    width: 3rem;
+    height: 60px;
+    width: 60px;
     justify-content: center;
     align-items: flex-start;
     margin-right: 0.2rem;
@@ -64,7 +62,7 @@
     display: none;
   }
   .resumeMobile {
-    height: 3rem;
+    height: 60px;
     width: 5rem;
     display: flex;
     justify-content: center;

@@ -1,5 +1,5 @@
 import styles from "./page.module.css";
-import { skills } from "@/utils/data";
+import { skills } from "../../../public/data";
 
 export default function Skills() {
   const keys = Object.keys(skills);
@@ -11,7 +11,11 @@ export default function Skills() {
             <p className={styles.stackName}>{key}</p>
             <div className={styles.skillDiv}>
               {skills[key].map((skill) => {
-                return <p key={skill} className={styles.skill}>{skill}</p>;
+                return (
+                  <p key={skill} className={styles.skill}>
+                    {skill}
+                  </p>
+                );
               })}
             </div>
           </div>

@@ -1,7 +1,5 @@
 import styles from "./page.module.css";
 import Image from "next/image";
-import linkedin from "../../../../public/images/linkedin.svg";
-import github from "../../../../public/images/github.svg";
 
 export default function Footer() {
   return (
@@ -12,14 +10,14 @@ export default function Footer() {
           target="__blank"
           className={styles.link}
         >
-          <Image src={linkedin} className={styles.image} alt="LinkedIn" />
+          <Image src="/images/linkedin.svg" className={styles.image} alt="LinkedIn" fill={true}/>
         </a>
         <a
           href="https://github.com/encrustace"
           target="__blank"
           className={styles.link}
         >
-          <Image src={github} className={styles.image} alt="Github"/>
+          <Image src="/images/github.svg" className={styles.image} alt="Github" fill={true}/>
         </a>
       </div>
       <div className={styles.resume}><p>
