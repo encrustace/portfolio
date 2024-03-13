@@ -1,6 +1,6 @@
 import styles from "./page.module.css";
 import Image from "next/image";
-import { data } from "../../../public/data";
+import { data } from "../../utils/data";
 
 export default function ExperiencePage() {
   return (

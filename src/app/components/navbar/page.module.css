@@ -1,13 +1,14 @@
 .main {
   height: 100%;
-  width: 5rem;
+  width: 80px;
   display: flex;
   flex-direction: column;
   border-right: 1px solid var(--boderColor);
+  gap: 0.5rem;
 }
 
 .link {
-  height: 5rem;
+  height: 80px;
   width: auto;
   text-decoration: none;
   display: flex;
@@ -16,10 +17,12 @@
   padding: 0.5rem;
   color: var(--color);
   transform: rotate(-90deg);
+  transition: all 0.3s ease;
 }
 
 .link:hover {
   background: var(--highlightColor);
+  transform: rotate(0deg);
 }
 .selected {
   background: var(--highlightColor);
@@ -27,7 +30,7 @@
 
 @media (orientation: portrait) {
   .main {
-    height: 5rem;
+    height: 80px;
     width: 100%;
     flex-direction: row;
     border-bottom: 1px solid var(--boderColor);
@@ -35,8 +38,10 @@
   }
   .link {
     height: auto;
-    width: 5rem;
+    width: 80px;
     transform: rotate(0deg);
-    margin-right: 0.2rem;
+  }
+  .link:hover{
+    align-items: center;
   }
 }

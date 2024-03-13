@@ -1,5 +1,5 @@
 import styles from "./page.module.css";
-import { skills } from "../../../public/data";
+import { skills } from "../../utils/data";
 
 export default function Skills() {
   const keys = Object.keys(skills);

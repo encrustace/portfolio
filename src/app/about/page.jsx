@@ -1,5 +1,5 @@
 import styles from "./page.module.css";
-import { data } from "../../../public/data";
+import { data } from "../../utils/data";
 
 export default function About() {
   return (
