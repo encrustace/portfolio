@@ -10,14 +10,14 @@ export default function Footer() {
           target="__blank"
           className={styles.link}
         >
-          <Image src="/images/linkedin.svg" className={styles.image} alt="LinkedIn" fill={true}/>
+          <Image src="/linkedin.svg" className={styles.image} alt="LinkedIn" fill={true}/>
         </a>
         <a
           href="https://github.com/encrustace"
           target="__blank"
           className={styles.link}
         >
-          <Image src="/images/github.svg" className={styles.image} alt="Github" fill={true}/>
+          <Image src="/github.svg" className={styles.image} alt="Github" fill={true}/>
         </a>
       </div>
       <div className={styles.resume}><p>

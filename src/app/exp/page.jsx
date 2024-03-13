@@ -8,19 +8,19 @@ export default function ExperiencePage() {
       <div className={styles.box}>
         <div className={styles.text}>{data.college}</div>
         <div className={styles.icon}>
-          <Image src="/images/college.svg" alt="College" fill={true} />
+          <Image src="/college.svg" alt="College" fill={true} />
         </div>
       </div>
       <div className={styles.box}>
         <div className={styles.icon}>
-          <Image src="/images/capgemini.svg" alt="Capgemini" fill={true} />
+          <Image src="/capgemini.svg" alt="Capgemini" fill={true} />
         </div>
         <div className={styles.text}>{data.capgemini}</div>
       </div>
       <div className={styles.box}>
         <div className={styles.text}>{data.infosys}</div>
         <div className={styles.icon}>
-          <Image src="/images/infosys.svg" alt="Infosys" fill={true} />
+          <Image src="/infosys.svg" alt="Infosys" fill={true} />
         </div>
       </div>
     </div>
