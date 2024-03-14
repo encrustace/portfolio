@@ -5,7 +5,6 @@ import { links, texts } from "@/utils/data";
 export default function About() {
   return (
     <div className={styles.main}>
-      <div className={styles.content}>
         <a className={styles.resume} href={links.resume} target="__blank">
           resume
         </a>
@@ -79,8 +78,6 @@ export default function About() {
             </div>
           </div>
         </div>
-
-      </div>
     </div>
   );
 }
