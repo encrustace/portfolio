@@ -65,16 +65,13 @@
 
 .desc{
   color: var(--lightColor);
-  width: 28rem;
+  width: 30rem;
   text-align: center;
+  border-bottom: 1px solid var(--dividerColor);
+  padding: 0.5rem;
 }
 .date {
   color: var(--lightColor);
-}
-
-.divider {
-  height: 1px;
-  background: var(--boderColor);
 }
 
 .step {

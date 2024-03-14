@@ -36,7 +36,6 @@ export default function About() {
           </a>
         </div>
         <p className={styles.desc}>{texts.about}</p>
-        <div className={styles.divider}></div>
         <div className={styles.timeline}>
           <div className={`${styles.step} ${styles.leftStep}`}>
             <div className={styles.textbox}>
