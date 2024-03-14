@@ -1,9 +1,12 @@
 :root {
   --background: white;
   --color: black;
+  --lightColor: rgba(255, 255, 255, 0.50);
   --boderColor: rgba(0, 0, 0, 0.1);
-  --buttonColor: transparent;
-  --highlightColor: rebeccapurple;
+  --buttonColor: #0d4531cc;
+  --lightButtonColor: rgb(45, 47, 51);
+  --lightButtonTextColor: white;
+  --highlightColor: #10CB8A;
   --dividerColor: rgba(0, 0, 0, 0.1);
 }
 
@@ -11,9 +14,12 @@
   body {
     --background: #1f1f1f;
     --color: white;
-    --highlightColor: rebeccapurple;
+    --lightColor: rgba(255, 255, 255, 0.50);
+    --highlightColor: #10CB8A;
     --boderColor: rgba(255, 255, 255, 0.1);
-    --buttonColor: transparent;
+    --buttonColor: #0d4531cc;;
+    --lightButtonColor: rgb(45, 47, 51);
+    --lightButtonTextColor: white;
     --dividerColor: rgba(255, 255, 255, 0.1);
   }
 }
@@ -27,10 +33,13 @@
   padding: 0;
   margin: 0;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
+  color: var(--color);
+  text-decoration: none;
+  position: relative;
 }
 
 *:not(body, html) {
-  animation: moveTo 2s ease;
+  /* animation: moveTo 2s ease; */
 }
 
 html,

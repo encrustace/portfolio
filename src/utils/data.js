@@ -1,16 +1,15 @@
 const now = new Date();
 const options = { day: "numeric", month: "short", year: "numeric" };
-const data = {
-  shortDesc: "i build things for the web,mobile,iot & ai.",
-  desc: "i'm a software developer specializing in building user friendly digital platforms, using ReactJS, NextJS, Angular, have a look at skills section.",
-  college:
-    "2015-2019 | Bachelor of Technology | Computer Science & Engineering",
-  capgemini: "2020 -> software engineer -> associate consultant -> 2022",
-  infosys: `2022 -> associate consultant -> senior associate consultant -> ${now.toLocaleDateString(
-    "en-IN",
-    options
-  )}`,
+const links = {
+  resume: "https://docs.google.com/document/d/1rms7C_-1esNneY-Q8y-VConcEexneW3xTqM3flcAlZ4/edit?usp=sharing",
+  github: "https://github.com/encrustace",
+  linkedin: "https://linkedin.com/in/encrustace/",
+  twitter: "https://twitter.com/encrustace"
 };
+
+const texts = {
+  about: "I'm a software developer specializing in building user friendly digital platforms, using ReactJS, NextJS, Angular, have a look at skills section"
+}
 
 const skills = {
   frontend: [
@@ -28,4 +27,4 @@ const skills = {
   mix: ["JSON", "Thingworx", "Agile"],
 };
 
-export { data, skills };
+export { links, skills, texts };
