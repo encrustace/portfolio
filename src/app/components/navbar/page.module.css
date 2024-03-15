@@ -1,9 +1,9 @@
 .main {
   height: 100%;
-  width: 15%;
+  width: 20%;
   display: flex;
   flex-direction: column;
-  align-items: flex-end;
+  align-items: center;
   justify-content: center;
   gap: 0.5rem;
 }
@@ -40,10 +40,18 @@
     align-items: center;
     flex-direction: row;
     background: var(--lightButtonColor);
-    border-radius: 4rem;
     margin: 1rem;
     padding: 1rem 0rem 1rem 0rem;
     border: 1px solid var(--dividerColor);
+  }
+
+  .main::before {
+    position: absolute;
+    content: '';
+    height: 100%;
+    width: 100%;
+    background: conic-gradient(var(--highlightColor), transparent 90deg);
+    border: 1px dashed var(--dividerColor);
   }
 
   .link {

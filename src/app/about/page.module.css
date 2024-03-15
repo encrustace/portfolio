@@ -10,7 +10,16 @@
   letter-spacing: 1px;
 }
 
-.boxes {
+.leftBox {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 2rem;
+}
+
+.rightBox {
   flex: 1;
   display: flex;
   flex-direction: column;
@@ -42,10 +51,29 @@
 .wave {
   height: 3rem;
   width: 3rem;
+  animation: waveAnim  1s infinite;
 }
 
-.wave:hover {
-  transform: rotate(20deg);
+@keyframes waveAnim {
+  0% {
+    transform: rotate(0deg);
+  }
+
+  25% {
+    transform: rotate(20deg);
+  }
+
+  50% {
+    transform: rotate(0deg);
+  }
+
+  75% {
+    transform: rotate(-20deg);
+  }
+
+  100% {
+    transform: rotate(0deg);
+  }
 }
 
 .stack {
@@ -60,12 +88,11 @@
 }
 
 .link {
-  height: 3rem;
   display: flex;
   justify-content: center;
   align-items: center;
   background: var(--lightButtonColor);
-  padding: 1rem;
+  padding: 0.6rem;
   gap: 0.5rem;
   border-radius: 2rem;
   color: var(--lightButtonTextColor)

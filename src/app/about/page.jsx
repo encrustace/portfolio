@@ -5,7 +5,7 @@ import { links, texts } from "@/utils/data";
 export default function About() {
   return (
     <div className={styles.main}>
-      <div className={styles.boxes}>
+      <div className={styles.leftBox}>
         <a className={styles.resume} href={links.resume} target="__blank">
           resume
         </a>
@@ -38,7 +38,7 @@ export default function About() {
         </div>
         <p className={styles.desc}>{texts.about}</p>
       </div>
-      <div className={styles.boxes}>
+      <div className={styles.rightBox}>
         <p className={styles.timelineHeader}>MY TIMELINE</p>
         <div className={styles.timeline}>
           <div className={`${styles.step} ${styles.leftStep}`}>
