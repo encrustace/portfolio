@@ -7,9 +7,9 @@ export default function Skills() {
   return (
     <div className={styles.main}>
       {skills.map((item, index) => {
-        return (<div className={styles.skillDiv}>
+        return (<div key={index} className={styles.skillDiv}>
           <div className={styles.icon}>
-            <Image src={`/${item}.svg`} fill={true} />
+            <Image src={`/${item}.svg`} fill={true} alt={item} />
           </div>
           <p className={styles.label}>{item}</p>
         </div>)
