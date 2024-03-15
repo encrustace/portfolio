@@ -2,7 +2,7 @@
   display: flex;
   flex: 1;
   flex-direction: row;
-  justify-content: center;
+  justify-content: flex-end;
   align-items: center;
   overflow: auto;
   flex-wrap: wrap;
@@ -15,15 +15,25 @@
   flex-direction: row;
   align-items: center;
   justify-content: center;
-  height: 30%;
-  width: 20%;
-  border-radius: 0.5rem;
+  height: 250px;
+  width: 250px;
   gap: 0.5rem;
+  cursor: pointer;
+}
+.skillDiv::before {
+  position: absolute;
+	content: '';
+  height: 100%;
+  width: 100%;
+  background: conic-gradient(var(--highlightColor), transparent 120deg);
+  border: 1px dashed var(--dividerColor);
 }
 
-.skillDiv:hover {
-  box-shadow: -3px -1px 0.5rem var(--highlightColor);
+.skillDiv:hover::before{
+  border: 1px solid var(--highlightColor);
+  box-shadow: 1px 1px 10px 1px var(--highlightColor);
 }
+
 
 .icon {
   height: 50%;
@@ -40,6 +50,7 @@
   .main{
     padding: 1rem;
     gap: 1rem;
+    justify-content: flex-start;
   }
   .skillDiv {
     height: 20%;
