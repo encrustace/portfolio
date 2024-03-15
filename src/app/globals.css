@@ -39,7 +39,7 @@
 }
 
 *:not(body, html) {
-  /* animation: moveTo 2s ease; */
+  animation: moveTo 1s ease;
 }
 
 html,

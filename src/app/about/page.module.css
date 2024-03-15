@@ -8,18 +8,22 @@
   padding: 16px;
   padding-right: 15%;
   gap: 8px;
+  letter-spacing: 1px;
 }
 
 .resume {
   display: flex;
   align-items: center;
   justify-content: center;
-  width: 64px;
+  width: 5rem;
   background: var(--buttonColor);
   padding: 0.5rem;
   border-radius: 1rem;
   font-size: 0.8rem;
   color: var(--highlightColor);
+  border: 1px solid;
+  position: absolute;
+  top: -40px;
 }
 
 .hi {
@@ -33,6 +37,10 @@
 .wave {
   height: 3rem;
   width: 3rem;
+}
+
+.wave:hover {
+  transform: rotate(20deg);
 }
 
 .stack {
@@ -63,13 +71,24 @@
   width: 24px;
 }
 
-.desc{
+.desc {
   color: var(--lightColor);
-  width: 30rem;
-  text-align: center;
+  width: 40rem;
+  text-align: left;
   border-bottom: 1px solid var(--dividerColor);
   padding: 0.5rem;
 }
+
+.timelineHeader {
+  padding: 0.5rem;
+  font-size: 1.3rem;
+  font-weight: 700;
+}
+
+.timeline{
+  width: 100%;
+}
+
 .date {
   color: var(--lightColor);
 }
@@ -87,6 +106,7 @@
   display: flex;
   margin-left: 0.5rem;
   justify-content: flex-end;
+  text-align: end;
 }
 
 .rightStep {
@@ -114,13 +134,28 @@
   top: 0;
   left: 50%;
   z-index: 1;
-  background: var(--color);
   border-radius: 0.25rem;
+  background: linear-gradient(to bottom, var(--lightButtonColor), var(--highlightColor)); /* Adjust the colors here */
+  background-size: 100% 0%; /* Set initial size of the background to 0% */
+  animation: fillGradient 5s linear forwards; /* Adjust animation duration here */
+}
+
+@keyframes fillGradient {
+  0% {
+    background-size: 100% 0%; /* Start with 0% height */
+  }
+  100% {
+    background-size: 100% 100%; /* End with 100% height */
+  }
 }
 
 @media (orientation: portrait) {
   .main {
     width: 100vw;
     padding-right: 0%;
+  }
+
+  .desc {
+    width: 100%;
   }
 }
