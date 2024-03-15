@@ -11,19 +11,21 @@ const texts = {
   about: "I'm a software developer specializing in building user friendly digital platforms, using ReactJS, NextJS, Angular, have a look at skills section"
 }
 
-const skills = {
-  frontend: [
-    "html",
-    "javascript",
-    "css",
-    "reactjs",
-    "nextjs",
-    "angular",
-    "typescript",
-    "flutter",
-    "dart",
-  ],
-  backend: ["nodejs", "java", "spring boot", "sql", "nosql"]
-};
+const skills = [
+  "HTML",
+  "JavaScript",
+  "CSS",
+  "React",
+  "Next",
+  "JSON",
+  "Angular",
+  "TypeScript",
+  "Flutter",
+  "Dart",
+  "Node",
+  "Java",
+  "SpringBoot",
+  "SQL"
+]
 
 export { links, skills, texts };

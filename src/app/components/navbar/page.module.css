@@ -43,6 +43,7 @@
     border-radius: 4rem;
     margin: 1rem;
     padding: 1rem 0rem 1rem 0rem;
+    border: 1px solid var(--dividerColor);
   }
 
   .link {
@@ -53,6 +54,6 @@
     justify-content: center;
     transform: rotate(0deg);
     border-radius: 2rem;
-    box-shadow: 0px 0px 0.5rem var(--color);
+    box-shadow: -5px -5px 0.5rem #1f1f1f, 5px 5px 0.5rem #1f1f1f;
   }
 }
