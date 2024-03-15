@@ -46,6 +46,7 @@ html,
 body {
   height: 100dvh;
   width: 100dvw;
+  min-width: 400px;
   display: flex;
   flex-direction: row;
   overflow: hidden;

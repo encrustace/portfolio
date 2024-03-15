@@ -23,8 +23,7 @@ const skills = {
     "flutter",
     "dart",
   ],
-  backend: ["nodejs", "java", "spring boot", "sql", "nosql"],
-  mix: ["JSON", "Thingworx", "Agile"],
+  backend: ["nodejs", "java", "spring boot", "sql", "nosql"]
 };
 
 export { links, skills, texts };
