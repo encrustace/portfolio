@@ -13,7 +13,7 @@ export default function ContactPage() {
         <p className={styles.text}>Public key:<div className={styles.publicKey}><p>{contact.publikKey}</p></div></p>
       </div>
       <div className={styles.form}>
-        <p>Let's chat:</p>
+        <p>Let&apos;s chat:</p>
         <input className={styles.input} placeholder="Name" />
         <input className={styles.input} placeholder="Email" />
         <input className={styles.input} placeholder="Phone" />

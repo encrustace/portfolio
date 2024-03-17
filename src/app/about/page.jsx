@@ -10,7 +10,7 @@ export default function About() {
           resume
         </a>
         <div className={styles.hi}>
-          <p>Hi, I am Imran</p>
+          <p>Hi, I&apos;m Imran</p>
           <div className={styles.wave}>
             <Image src="/wave.svg" fill={true} alt="wave" />
           </div>
