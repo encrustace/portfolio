@@ -22,17 +22,6 @@
   padding-bottom: 0.5rem;
 }
 
-.text {
-  font-weight: 700;
-  font-size: 1.2rem;
-  text-wrap: wrap;
-}
-
-.text span {
-  font-weight: 500;
-  text-wrap: wrap;
-}
-
 .publicKey {
   background: var(--lightButtonColor);
   width: 100%;
