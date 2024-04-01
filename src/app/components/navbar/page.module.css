@@ -9,6 +9,7 @@
 }
 
 .link {
+  color: var(--lightButtonTextColor);
   height: 80px;
   width: 80px;
   text-decoration: none;
@@ -16,7 +17,6 @@
   align-items: flex-end;
   justify-content: flex-start;
   padding: 0.5rem;
-  color: var(--color);
   transform: rotate(-90deg);
   transition: all 0.3s ease;
   outline: none;

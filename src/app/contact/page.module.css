@@ -1,11 +1,31 @@
 .main {
   display: flex;
-  flex: 1;
+  position: relative;
+  height: 100%;
+  width: 100%;
+}
+
+.content {
+  display: flex;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
   overflow-y: auto;
   overflow: auto;
+}
+
+.overlay{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
 }
 
 .address {
@@ -15,11 +35,6 @@
   flex: 1;
   padding: 1rem;
   width: 50%;
-}
-
-.addressHeader {
-  border-bottom: 1px solid var(--dividerColor);
-  padding-bottom: 0.5rem;
 }
 
 .text {
@@ -34,10 +49,11 @@
 }
 
 .publicKey {
-  background: var(--lightButtonColor);
   width: 100%;
   text-wrap: wrap;
   padding: 0.5rem;
+  margin-top: 0.5rem;
+  font-size: 0.8rem;
 }
 
 .publicKey p {
@@ -57,43 +73,51 @@
 
 .input {
   padding: 0.5rem;
-  background: var(--lightButtonColor);
+  background: inherit;
   border: 1px solid var(--highlightColor);
 }
 
 .message {
   height: 8rem;
   padding: 0.5rem;
-  background: var(--lightButtonColor);
+  background: inherit;
   border: 1px solid var(--highlightColor);
 }
 
-.sendBtn {
+.error {
   margin-top: 0.5rem;
+  color: var(--errorColor);
+}
+
+.sendBtn {
   padding: 0.5rem;
-  background: conic-gradient(var(--highlightColor), transparent 90deg);
-  border: 1px dashed var(--dividerColor);
-  color: var(--highlightColor);
+  width: 100%;
+  height: 44px;
+  background: var(--highlightColor);
+  border: 1px solid var(--dividerColor);
+  color: var(--lightButtonTextColor);
   cursor: pointer;
 }
 
 .sendBtn:hover {
-  border: 1px dashed var(--highlightColor);
+  border: 1px solid;
 }
 
 
 @media (orientation: portrait) {
-  .main {
+  .content {
     padding-right: 0%;
     align-items: center;
     justify-content: center;
     flex-direction: column;
   }
-  .address{
+
+  .address {
     width: 100%;
     height: fit-content;
   }
-  .form{
+
+  .form {
     width: 100%;
     height: fit-content;
   }

@@ -19,6 +19,7 @@
   width: 250px;
   gap: 0.5rem;
   cursor: pointer;
+  background: var(--lightButtonColor);
 }
 .skillDiv::before {
   position: absolute;
