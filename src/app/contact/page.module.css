@@ -37,13 +37,8 @@
 }
 
 .text {
-  font-weight: 700;
-  font-size: 1.2rem;
-  text-wrap: wrap;
-}
-
-.text span {
   font-weight: 500;
+  font-size: 1.2rem;
   text-wrap: wrap;
 }
 
@@ -95,6 +90,7 @@
   background: var(--highlightColor);
   border: 1px solid var(--dividerColor);
   color: var(--lightButtonTextColor);
+  font-size: 1rem;
   cursor: pointer;
 }
 

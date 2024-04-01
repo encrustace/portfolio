@@ -60,7 +60,7 @@ export default function ContactPage() {
     <div className={styles.main}>
       <div className={styles.content}>
         <div className={styles.address}>
-          <h4>Reach me</h4>
+          <h2>Reach Me</h2>
           {address("Name", contact.name)}
           {address("Email", contact.email)}
           {address("Country", contact.country)}
@@ -68,7 +68,7 @@ export default function ContactPage() {
           <h3 className={styles.text}>Public key:<div className={styles.publicKey}><h6>{contact.publikKey}</h6></div></h3>
         </div>
         <div className={styles.form}>
-          <h4>Let&apos;s chat {error}</h4>
+          <h2>Let&apos;s chat</h2>
           <input className={styles.input} placeholder="Name" value={name} onChange={(event) => { setName(event.target.value); setError("") }} />
           <input className={styles.input} placeholder="Email" value={email} onChange={(event) => { setEmail(event.target.value); setError("") }} />
           <input className={styles.input} placeholder="Phone" value={phone} onChange={(event) => { setPhone(event.target.value); setError("") }} />
