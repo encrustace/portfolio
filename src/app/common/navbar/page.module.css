@@ -50,7 +50,6 @@
     content: '';
     height: 100%;
     width: 100%;
-    background: conic-gradient(var(--highlightColor), transparent 90deg);
     border: 1px dashed var(--dividerColor);
   }
 

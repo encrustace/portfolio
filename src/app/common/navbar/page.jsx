@@ -31,6 +31,12 @@ export default function Navbar() {
       >
         contact.
       </Link>
+      <Link
+        href="/relax"
+        className={`${styles.link} ${pathname === "/relax" && styles.selected}`}
+      >
+        relax.
+      </Link>
     </div>
   );
 }

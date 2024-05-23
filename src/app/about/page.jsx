@@ -12,26 +12,26 @@ export default function About() {
         <div className={styles.hi}>
           <p>Hi, I&apos;m Imran</p>
           <div className={styles.wave}>
-            <Image src="/wave.svg" fill={true} alt="wave" />
+            <Image src="/images/wave.svg" fill={true} alt="wave" />
           </div>
         </div>
         <p className={styles.stack}>Web Developer</p>
         <div className={styles.linksBox}>
           <a className={styles.link} href={links.github} target="__blank">
             <div className={styles.linkIcon}>
-              <Image src="/github.svg" fill={true} alt="github" />
+              <Image src="/images/github.svg" fill={true} alt="github" />
             </div>
             github
           </a>
           <a className={styles.link} href={links.linkedin} target="__blank">
             <div className={styles.linkIcon}>
-              <Image src="/linkedin.svg" fill={true} alt="linkedin" />
+              <Image src="/images/linkedin.svg" fill={true} alt="linkedin" />
             </div>
             linkedin
           </a>
           <a className={styles.link} href={links.twitter} target="__blank">
             <div className={styles.linkIcon}>
-              <Image src="/twitter.svg" fill={true} alt="twitter" />
+              <Image src="/images/twitter.svg" fill={true} alt="twitter" />
             </div>
             twitter
           </a>
