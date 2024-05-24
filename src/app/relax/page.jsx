@@ -15,7 +15,7 @@ export default function Relax() {
     // Function to create raindrops
     function createRaindrop() {
         return {
-            x: Math.random() * canvasRef.current.width * 10,
+            x: Math.random() * canvasRef.current.width * 15,
             y: 0,
             length: Math.random() * 20 + 10,
             speed: Math.random() * 10 + 10
