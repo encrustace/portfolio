@@ -1,6 +1,6 @@
 .main {
   height: 100%;
-  width: 100%;
+  width: calc(100% - 100px);
   display: flex;
   flex-direction: row;
   padding: 50px;
@@ -11,10 +11,11 @@
   opacity: 0;
   transform-origin: bottom;
   animation: growFromBottom 0.5s ease-out forwards;
+  overflow: auto;
 }
 
 .label{
-  font-size: 4em;
+  font-size: 4vw;
 }
 
 @keyframes growFromBottom {
@@ -31,9 +32,7 @@
 
 @media (orientation: portrait) {
   .main{
-    padding: 1rem;
-    gap: 2rem;
-    justify-content: center;
-    align-items: center;
+    width: 100%;
+    height: calc(100% - 100px);
   }
 }

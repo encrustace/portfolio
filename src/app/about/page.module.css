@@ -1,6 +1,6 @@
 .main {
   height: 100%;
-  width: 100%;
+  width: calc(100% - 100px);
   display: flex;
   overflow: auto;
   padding: 50px;
@@ -61,11 +61,13 @@
 
 @media (orientation: portrait) {
   .main {
+    height: calc(100% - 100px);
+    width: 100%;
     flex-direction: column;
   }
 
   .heading {
-    font-size: 8em;
+    font-size: 24vw;
   }
 
   .left{

@@ -57,6 +57,7 @@ export default function Navbar() {
         <a href={links.github} target="blank" className={styles.link}>
           GH
         </a>
+        <div className={styles.line}></div>
         <div className={styles.musicBox}>
           <audio
             ref={tentAudioRef}
@@ -71,10 +72,12 @@ export default function Navbar() {
             <source src={`/audios/thunder_rain.ogg`} type="audio/ogg" />
           </audio>
           <button className={styles.rain} onClick={playPauseMaster}>
-            <FontAwesomeIcon className={styles.playPause} icon={playing ? faPauseCircle : faPlayCircle}/>
+            <FontAwesomeIcon
+              className={styles.playPause}
+              icon={playing ? faPauseCircle : faPlayCircle}
+            />
           </button>
         </div>
-        <div className={styles.line}></div>
       </div>
       <div className={styles.copyright}>
         <p>&copy;/2024</p>

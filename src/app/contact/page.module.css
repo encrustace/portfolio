@@ -1,6 +1,6 @@
 .main {
   display: flex;
-  width: 100%;
+  width: calc(100% - 100px);
   height: 100%;
   flex-direction: column;
   justify-content: center;
@@ -38,9 +38,11 @@
 @media (orientation: portrait) {
   .main{
     justify-content: flex-start;
+    height: calc(100% - 100px);
+    width: 100%;
   }
   .hello{
-    font-size: 26vw;
+    font-size: 22vw;
     margin-left: -1.5%;
   }
 }
