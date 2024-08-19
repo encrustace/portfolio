@@ -1,207 +1,79 @@
 .main {
-  flex: 1;
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  justify-content: space-evenly;
-  overflow: auto;
-  padding: 1rem;
-  gap: 0.5rem;
-  letter-spacing: 1px;
-}
-
-.leftBox {
-  flex: 1;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  gap: 2rem;
-}
-
-.rightBox {
-  flex: 1;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-}
-
-.hi {
-  display: flex;
-  align-items: flex-end;
-  font-size: 3rem;
-  font-weight: 800;
-  gap: 0.5rem;
-}
-
-.resume {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  width: 5rem;
-  background: var(--buttonColor);
-  padding: 0.5rem;
-  border-radius: 1rem;
-  font-size: 0.8rem;
-  color: var(--highlightColor);
-  border: 1px solid;
-}
-
-.wave {
-  height: 3rem;
-  width: 3rem;
-  animation: waveAnim  1s infinite;
-}
-
-@keyframes waveAnim {
-  0% {
-    transform: rotate(0deg);
-  }
-
-  25% {
-    transform: rotate(20deg);
-  }
-
-  50% {
-    transform: rotate(0deg);
-  }
-
-  75% {
-    transform: rotate(-20deg);
-  }
-
-  100% {
-    transform: rotate(0deg);
-  }
-}
-
-.stack {
-  color: var(--highlightColor);
-  font-size: 3rem;
-  font-weight: 800;
-}
-
-.linksBox {
-  display: flex;
-  gap: 8px;
-}
-
-.link {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  background: var(--lightButtonColor);
-  padding: 0.6rem;
-  gap: 0.5rem;
-  border-radius: 2rem;
-  color: var(--lightButtonTextColor)
-}
-
-.linkIcon {
-  height: 24px;
-  width: 24px;
-}
-
-.desc {
-  color: var(--lightColor);
-  width: 80%;
-  text-align: center;
-  padding: 0.5rem;
-}
-
-.timelineHeader {
-  padding: 1rem;
-  margin: 1rem;
-  font-size: 1.3rem;
-  font-weight: 700;
-  border: 1px dashed var(--highlightColor);
-}
-
-.timeline {
-  width: 100%;
-}
-
-.date {
-  color: var(--lightColor);
-}
-
-.step {
-  display: flex;
-  justify-content: space-between;
-  height: 5rem;
-  width: 50%;
-  gap: 1rem;
-}
-
-.leftStep {
-  left: 0;
-  display: flex;
-  margin-left: 0.5rem;
-  justify-content: flex-end;
-  text-align: end;
-}
-
-.rightStep {
-  left: 50%;
-  display: flex;
-  margin-left: -0.45rem;
-  justify-content: flex-start;
-}
-
-.textbox {
-  width: 100%;
-}
-
-.circle {
-  min-height: 1rem;
-  min-width: 1rem;
-  height: 1rem;
-  width: 1rem;
-  background: var(--color);
-  border-radius: 50%;
-  z-index: 2;
-}
-
-.timeline::after {
-  content: "";
-  position: absolute;
-  width: 0.1rem;
   height: 100%;
-  top: 0;
-  left: 50%;
-  z-index: 1;
-  border-radius: 0.25rem;
-  background: linear-gradient(to bottom, var(--lightButtonColor), var(--highlightColor));
-  /* Adjust the colors here */
-  background-size: 100% 0%;
-  /* Set initial size of the background to 0% */
-  animation: fillGradient 5s linear forwards;
-  /* Adjust animation duration here */
+  width: 100%;
+  display: flex;
+  overflow: auto;
+  padding: 50px;
+  gap: 50px;
+  opacity: 0;
+  transform-origin: bottom;
+  animation: growFromBottom 0.5s ease-out forwards;
 }
 
-@keyframes fillGradient {
-  0% {
-    background-size: 100% 0%;
-    /* Start with 0% height */
-  }
+.left {
+  height: auto;
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  gap: 50px;
+}
 
-  100% {
-    background-size: 100% 100%;
-    /* End with 100% height */
+.heading {
+  font-size: 10em;
+  font-weight: 300;
+  opacity: 0;
+  transform-origin: bottom;
+  animation: growFromBottom 0.5s ease-out 0.5s forwards;
+}
+
+@keyframes growFromBottom {
+  0% {
+    transform: scaleY(0);
+    opacity: 0;
   }
+  100% {
+    transform: scaleY(1);
+    opacity: 1;
+  }
+}
+
+.quote{
+  font-size: 2em;
+  font-weight: 300;
+}
+
+.right {
+  height: auto;
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.imranImage{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
 }
 
 @media (orientation: portrait) {
   .main {
-    padding-right: 0%;
-    align-items: center;
-    justify-content: flex-start;
     flex-direction: column;
   }
 
-  .desc {
-    width: 100%;
-    border-bottom: 1px solid var(--dividerColor);
+  .heading {
+    font-size: 8em;
   }
+
+  .left{
+    width: 100%;
+  }
+
+  .right{
+    width: 100%;
+  }
+
 }

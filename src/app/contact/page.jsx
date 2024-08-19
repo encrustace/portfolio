@@ -1,20 +1,21 @@
-"use client"
+"use client";
 import styles from "./page.module.css";
-import { contact } from "@/utils/data";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faUser, faEnvelope, faLocation, faEarth, faKey } from "@fortawesome/free-solid-svg-icons";
+import { texts, links } from "@/utils/data";
+import { Orbitron } from "next/font/google";
+
+const font = Orbitron({ subsets: ["latin"] });
 
 export default function ContactPage() {
-
   return (
     <div className={styles.main}>
-      <div className={styles.address}>
-        <div className={styles.textBox}><FontAwesomeIcon icon={faUser} />{contact.name}</div>
-        <div className={styles.textBox}><FontAwesomeIcon icon={faEnvelope} />{contact.email}</div>
-        <div className={styles.textBox}><FontAwesomeIcon icon={faLocation} />{contact.country}</div>
-        <div className={styles.textBox}><FontAwesomeIcon icon={faEarth} />{contact.planet}</div>
-        <div className={styles.textBox}><FontAwesomeIcon icon={faKey} />{contact.publikKey}</div>
-      </div>
+      <p className={`${styles.hello} ${font.className}`}>Hello.</p>
+      <p className={styles.pitch}>{texts.intro}</p>
+      <p>
+        Email: <a href={`mailto:${texts.email}`}>{texts.email}</a>
+        <br />
+        On the Internet: <a href={links.linkedin}>LinkedIn</a> /{" "}
+        <a href={links.github}>GitHub</a> / <a href={links.twitter}>Twitter</a>
+      </p>
     </div>
   );
 }

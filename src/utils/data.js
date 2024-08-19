@@ -8,23 +8,16 @@ const links = {
 };
 
 const texts = {
-  about: "I'm a software developer specializing in building user friendly digital platforms, using ReactJS, NextJS, Angular, have a look at skills section"
-}
-
-const contact = {
   name: "Imran Khan",
+  aboutShort: "I'm Imran. A software developer and problem solver.",
+  about: "I'm a software developer specializing in building user friendly digital platforms",
+  desc: "The cusp of art and technology has always fascinated me and I've never been afraid to just jump in and give it a go, whether it's HTML, CSS or Programming Languages. I’ve been playing with computers since the day I first got PC. Fast forward to 2024 and I’ve tried it all, from JavaScript to Dart, Windows to Arch Linux. Everything I have done, small or big, has been a vital stepping stone for where I am today. What excites me most about being a Software Developer is being able to create things that have purpose and solve real problems. It goes beyond designing buttons and websites and involves having a passion for designing experiences and solutions that help people, whether it's helping them make better videos, market themselves online, or buy something online. Leaning into customer insight and understanding their needs, finding the right problems to solve, delivering solutions as quickly as possible, learning from those and then iterating and improving that value over time is the key to great product design.",
+  working: "Currently working full-time as a Senior Software Developer at",
+  company: "Globant India",
+  intro: "Need a beutiful, well structured website that you can own and maintain yourself? Get in touch.",
   email: "encrustace@gmail.com",
   country: "India",
-  planet: "Earth",
-  publikKey: `-----BEGIN PUBLIC KEY-----
-  MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAwgBg8ZxbZVchTdI3uA1B
-  m5Honq5OjXLUdIk5upKGTy5cOQ6R6Wja0612P4IvaZDXpvaXxAuAkuW6+5lzriVM
-  OBaKBGrB23/XDwP8trkMANrZlmgsQyoE6Q83871y5/uaLXFpnTYLTDVPug4ny9Jz
-  mBLgtuVQElPbVBaMBCknO7J9Vpk4Ei7NHiKH1FR4CrGhMPzMZ6AHIas5P9Wn2GGv
-  k+VdLmuVlbnZvxwAzhjdF8q+0/j4qPSNYdPwnuZBwIXCgcJm/Fo7/PjavVjM1OFa
-  6mRFjPZLlIgvXB3lSrQ/yYFgpX25BplPdIkV4bbnudtFpLZRNuM2ujIFjbNn0fQm
-  1QIDAQAB
-  -----END PUBLIC KEY-----`
+  planet: "Earth"
 }
 
 const skills = [
@@ -44,4 +37,4 @@ const skills = [
   "SQL"
 ]
 
-export { links, skills, texts, contact };
+export { links, skills, texts };

@@ -1,57 +1,29 @@
 :root {
-  --background: #1f1f1f;
-  --color: white;
-  --lightColor: rgba(255, 255, 255, 0.50);
-  --highlightColor: #10CB8A;
-  --boderColor: rgba(255, 255, 255, 0.1);
-  --buttonColor: #0d4531cc;
-  --lightButtonColor: rgb(45, 47, 51);
-  --lightButtonTextColor: white;
-  --dividerColor: rgba(255, 255, 255, 0.1);
-  --errorColor: red;
-  /* --background: white;
-  --color: black;
-  --lightColor: rgba(0, 0, 0, 0.5);
-  --highlightColor: #10CB8A;
-  --boderColor: rgba(255, 255, 255, 0.1);
-  --buttonColor: #0d4531cc;
-  --lightButtonColor: rgb(45, 47, 51);
-  --lightButtonTextColor: rgb(0, 0, 0);
-  --dividerColor: rgba(0, 0, 0, 0.1);
-  --errorColor: red; */
+  --background: #ece7e1;
+  --charcoal: #5c5b5b;
 }
 
 @media (prefers-color-scheme: dark) {
   body {
-    --background: #1f1f1f;
-    --color: white;
-    --lightColor: rgba(255, 255, 255, 0.50);
-    --highlightColor: #10CB8A;
-    --boderColor: rgba(255, 255, 255, 0.1);
-    --buttonColor: #0d4531cc;
-    --lightButtonColor: rgb(45, 47, 51);
-    --lightButtonTextColor: white;
-    --dividerColor: rgba(255, 255, 255, 0.1);
-    --errorColor: red;
+    --background: #1b1b1b;
+    --charcoal: #ece7e1;
   }
-}
-
-::-webkit-scrollbar {
-  display: none;
 }
 
 * {
   box-sizing: border-box;
   padding: 0;
   margin: 0;
-  font-family: Verdana, Geneva, Tahoma, sans-serif;
-  color: var(--color);
-  text-decoration: none;
-  position: relative;
+  color: var(--charcoal);
 }
 
-*:not(body, html) {
-  animation: moveTo 1s ease;
+::-webkit-scrollbar{
+  height: 5px;
+  width: 5px;
+}
+
+a:hover{
+  text-decoration: line-through;
 }
 
 html,
@@ -61,28 +33,25 @@ body {
   min-width: 400px;
   display: flex;
   flex-direction: row;
-  overflow: hidden;
   background: var(--background);
   color: var(--color);
-  position: relative;
-}
-
-@keyframes moveTo {
-  from {
-    transform: translateY(-100%);
-    ;
-  }
+  font-size: 14px;
+  line-height: 1.5;
 }
 
 @media (orientation: portrait) {
   body {
     flex-direction: column;
   }
+}
 
-  @keyframes moveTo {
-    from {
-      transform: translateY(100%);
-      ;
-    }
+@keyframes growFromBottom {
+  0% {
+    transform: scaleY(0);
+    opacity: 0;
+  }
+  100% {
+    transform: scaleY(1);
+    opacity: 1;
   }
 }

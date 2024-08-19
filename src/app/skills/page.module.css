@@ -1,49 +1,31 @@
 .main {
-  display: flex;
-  flex: 1;
-  flex-direction: row;
-  justify-content: center;
-  align-items: center;
-  overflow: auto;
-  flex-wrap: wrap;
-  gap: 8rem;
-  padding: 4rem;
-}
-
-.skillDiv {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  justify-content: center;
-  height: 200px;
-  width: 250px;
-  gap: 0.5rem;
-  cursor: pointer;
-  background: var(--lightButtonColor);
-}
-.skillDiv::before {
-  position: absolute;
-	content: '';
   height: 100%;
   width: 100%;
-  background: conic-gradient(var(--highlightColor), transparent 120deg);
-  border: 1px dashed var(--dividerColor);
+  display: flex;
+  flex-direction: row;
+  padding: 50px;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 80px;
+  opacity: 0;
+  transform-origin: bottom;
+  animation: growFromBottom 0.5s ease-out forwards;
 }
 
-.skillDiv:hover::before{
-  border: 1px solid var(--highlightColor);
-  box-shadow: 1px 1px 10px 1px var(--highlightColor);
+.label{
+  font-size: 4em;
 }
 
-
-.icon {
-  height: 40%;
-  width: 40%;
-}
-
-.label {
-  color: var(--highlightColor);
-  font-weight: 700;
+@keyframes growFromBottom {
+  0% {
+    transform: scaleY(0);
+    opacity: 0;
+  }
+  100% {
+    transform: scaleY(1);
+    opacity: 1;
+  }
 }
 
 
@@ -53,11 +35,5 @@
     gap: 2rem;
     justify-content: center;
     align-items: center;
-  }
-  .skillDiv {
-    height: 15%;
-    width: 25%;
-    flex-direction: column;
-    background: var(--lightButtonColor);
   }
 }

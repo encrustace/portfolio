@@ -1,8 +1,8 @@
-import { Inter } from "next/font/google";
+import { Montserrat } from "next/font/google";
 import "@/app/globals.css";
 import Navbar from "@/app/common/navbar/page";
 
-const inter = Inter({ subsets: ["latin"] });
+const font = Montserrat({ subsets: ["latin"] });
 
 export const metadata = {
   title: "Imran Khan",
@@ -14,7 +14,7 @@ export default function RootLayout({ children }) {
     <html lang="en">
       <head>
       </head>
-      <body className={inter.className}>
+      <body className={font.className}>
         <Navbar />
         {children}
       </body>
