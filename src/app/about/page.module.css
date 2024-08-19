@@ -6,7 +6,7 @@
   padding: 50px;
   gap: 50px;
   opacity: 0;
-  transform-origin: bottom;
+  transform-origin: top;
   animation: growFromBottom 0.5s ease-out forwards;
 }
 

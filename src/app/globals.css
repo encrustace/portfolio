@@ -17,10 +17,10 @@
   color: var(--charcoal);
 }
 
-/* ::-webkit-scrollbar{
+::-webkit-scrollbar{
   height: 0;
   width: 0;
-} */
+}
 
 a:hover{
   text-decoration: line-through;
