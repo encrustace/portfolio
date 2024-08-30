@@ -5,8 +5,8 @@
   flex-direction: column;
   align-items: center;
   justify-content: space-between;
-  padding: 3rem 0 3rem 0;
-  letter-spacing: 0.3rem;
+  padding: 2rem 0 2rem 0;
+  letter-spacing: 0.2rem;
 }
 .links {
   display: flex;
@@ -14,7 +14,7 @@
   flex-direction: column;
   align-items: center;
   justify-content: flex-start;
-  gap: 3rem;
+  gap: 2rem;
 }
 .link {
   text-decoration: none;
@@ -25,9 +25,9 @@
 
 .line{
   display: flex;
-  width: 0.2rem;
+  width: 0.05rem;
   height: 6rem;
-  background: var(--color);
+  background: var(--charcoal);
 }
 
 .copyright{
@@ -58,12 +58,13 @@
    height: 6rem;
    flex-direction: row;
    align-items: center;
-   padding: 0 3rem 0 3rem;
+   justify-content: space-between;
+   padding: 2rem;
   }
   .links{
     flex-direction: row;
     align-items: center;
-    gap: 1.5rem;
+    gap: 1rem;
   }
 
   .link{
@@ -71,9 +72,8 @@
   }
 
   .line{
-    height: 0.2rem;
-    width: 5rem;
-    background-color: var(--charcoal);
+    height: 0.05rem;
+    width: 2rem;
   }
   
   .copyright p{
