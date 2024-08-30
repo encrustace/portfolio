@@ -1,13 +1,13 @@
 .main {
   height: 100%;
-  width: calc(100% - 100px);
+  width: 100%;
   display: flex;
   flex-direction: row;
-  padding: 50px;
+  padding: 3rem;
   justify-content: center;
   align-items: center;
   flex-wrap: wrap;
-  gap: 80px;
+  gap: 5rem;
   opacity: 0;
   transform-origin: top;
   animation: growFromBottom 0.5s ease-out forwards;
@@ -26,13 +26,5 @@
   100% {
     transform: scaleY(1);
     opacity: 1;
-  }
-}
-
-
-@media (orientation: portrait) {
-  .main{
-    width: 100%;
-    height: calc(100% - 100px);
   }
 }

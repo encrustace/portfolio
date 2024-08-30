@@ -1,16 +1,16 @@
 .canvas {
   position: absolute;
   height: 100dvh;
-  width: calc(100dvw - 150px);
+  width: calc(100dvw - 9rem);
   top: 0;
-  left: 150px;
+  left: 9rem;
 }
 
 @media (orientation: portrait) {
   .canvas {
     width: 100dvw;
-    top: 150px;
+    top: 9rem;
     left: 0;
-    height: calc(100dvh - 150px);
+    height: calc(100dvh - 9rem);
   }
 }
