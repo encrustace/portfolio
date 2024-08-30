@@ -58,6 +58,26 @@ export default function Navbar() {
           GH
         </a>
         <div className={styles.line}></div>
+        <div className={styles.musicBox}>
+          <audio
+            ref={tentAudioRef}
+            onTimeUpdate={() => handleTimeUpdate(tentAudioRef, 13)}
+          >
+            <source src={`/audios/tent_rain.ogg`} type="audio/ogg" />
+          </audio>
+          <audio
+            ref={thunderAudioRef}
+            onTimeUpdate={() => handleTimeUpdate(thunderAudioRef, 11)}
+          >
+            <source src={`/audios/thunder_rain.ogg`} type="audio/ogg" />
+          </audio>
+          <button className={styles.rain} onClick={playPauseMaster}>
+            <FontAwesomeIcon
+              className={styles.playPause}
+              icon={playing ? faPauseCircle : faPlayCircle}
+            />
+          </button>
+        </div>
       </div>
       <div className={styles.copyright}>
         <p>&copy;/2024</p>

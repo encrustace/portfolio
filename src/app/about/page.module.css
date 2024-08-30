@@ -3,7 +3,6 @@
   width: 100%;
   display: flex;
   overflow: auto;
-  padding: 3rem;
   gap: 3rem;
   opacity: 0;
   transform-origin: top;

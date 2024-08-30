@@ -7,6 +7,8 @@
   justify-content: space-between;
   padding: 2rem 0 2rem 0;
   letter-spacing: 0.2rem;
+  overflow: auto;
+  gap: 1rem;
 }
 .links {
   display: flex;
@@ -58,13 +60,14 @@
    height: 6rem;
    flex-direction: row;
    align-items: center;
-   justify-content: space-between;
-   padding: 2rem;
+   justify-content: flex-start;
+   padding: 1rem;
   }
   .links{
     flex-direction: row;
     align-items: center;
-    gap: 1rem;
+    justify-content: space-between;
+    gap: 0.5rem;
   }
 
   .link{

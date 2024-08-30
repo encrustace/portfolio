@@ -5,7 +5,6 @@
   align-items: center;
   justify-content: center;
   gap: 3rem;
-  padding: 3rem;
   opacity: 0;
   transform-origin: bottom;
   animation: growFromBottom 0.5s ease-out forwards;

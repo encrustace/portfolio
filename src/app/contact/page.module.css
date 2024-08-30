@@ -5,7 +5,7 @@
   flex-direction: column;
   justify-content: center;
   align-items: flex-start;
-  padding: 3rem;
+  overflow: auto;
   gap: 3rem;
   opacity: 0;
   transform-origin: top;
